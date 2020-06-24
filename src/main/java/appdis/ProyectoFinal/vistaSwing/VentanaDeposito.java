@@ -117,6 +117,11 @@ public class VentanaDeposito extends JInternalFrame {
 		getContentPane().add(btnConfirmar);
 
 		JButton btnCancelar = new JButton("CANCELAR");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
 		btnCancelar.setBounds(272, 272, 117, 29);
 		getContentPane().add(btnCancelar);
 

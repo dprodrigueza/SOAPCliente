@@ -89,7 +89,7 @@ public class VentanaPrincipal extends JFrame {
 		mntmNewMenuItem_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				VentanaRetiros vr = new VentanaRetiros();
+				VentanaRetiros vr = new VentanaRetiros(port);
 				getContentPane().add(vr);
 				vr.show();
 				
