@@ -26,8 +26,10 @@ public class ObjectFactory {
 
     private final static QName _RetiroResponse_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "RetiroResponse");
     private final static QName _ObtenerDatosCuenta_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "obtenerDatosCuenta");
+    private final static QName _TranferirDineroCuenta_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "tranferirDineroCuenta");
     private final static QName _Deposito_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "Deposito");
     private final static QName _Retiro_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "Retiro");
+    private final static QName _TranferirDineroCuentaResponse_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "tranferirDineroCuentaResponse");
     private final static QName _DepositoResponse_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "DepositoResponse");
     private final static QName _ObtenerDatosCuentaResponse_QNAME = new QName("http://servicios.ProyectoFinal.appdis/", "obtenerDatosCuentaResponse");
 
@@ -55,6 +57,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TranferirDineroCuentaResponse }
+     * 
+     */
+    public TranferirDineroCuentaResponse createTranferirDineroCuentaResponse() {
+        return new TranferirDineroCuentaResponse();
+    }
+
+    /**
      * Create an instance of {@link Deposito }
      * 
      */
@@ -68,6 +78,14 @@ public class ObjectFactory {
      */
     public Retiro createRetiro() {
         return new Retiro();
+    }
+
+    /**
+     * Create an instance of {@link TranferirDineroCuenta }
+     * 
+     */
+    public TranferirDineroCuenta createTranferirDineroCuenta() {
+        return new TranferirDineroCuenta();
     }
 
     /**
@@ -95,19 +113,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Cliente }
-     * 
-     */
-    public Cliente createCliente() {
-        return new Cliente();
-    }
-
-    /**
      * Create an instance of {@link Persona }
      * 
      */
     public Persona createPersona() {
         return new Persona();
+    }
+
+    /**
+     * Create an instance of {@link Cliente }
+     * 
+     */
+    public Cliente createCliente() {
+        return new Cliente();
     }
 
     /**
@@ -145,6 +163,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TranferirDineroCuenta }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://servicios.ProyectoFinal.appdis/", name = "tranferirDineroCuenta")
+    public JAXBElement<TranferirDineroCuenta> createTranferirDineroCuenta(TranferirDineroCuenta value) {
+        return new JAXBElement<TranferirDineroCuenta>(_TranferirDineroCuenta_QNAME, TranferirDineroCuenta.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Deposito }{@code >}}
      * 
      */
@@ -160,6 +187,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://servicios.ProyectoFinal.appdis/", name = "Retiro")
     public JAXBElement<Retiro> createRetiro(Retiro value) {
         return new JAXBElement<Retiro>(_Retiro_QNAME, Retiro.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TranferirDineroCuentaResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://servicios.ProyectoFinal.appdis/", name = "tranferirDineroCuentaResponse")
+    public JAXBElement<TranferirDineroCuentaResponse> createTranferirDineroCuentaResponse(TranferirDineroCuentaResponse value) {
+        return new JAXBElement<TranferirDineroCuentaResponse>(_TranferirDineroCuentaResponse_QNAME, TranferirDineroCuentaResponse.class, null, value);
     }
 
     /**

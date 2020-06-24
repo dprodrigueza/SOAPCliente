@@ -170,5 +170,9 @@ public class VentanaTransferencias extends JInternalFrame {
 			txtApellidosDestino.setText(_obtenerDatosCuenta__return.getCliente().getPersona().getApellidos());
 		}
 	}
+	
+	public void transferirDinero() {
+		
+	}
 
 }
